@@ -395,7 +395,31 @@ footer a:hover {
 
             // Responsive
 
+@media only screen and (max-width: 1140px) {
+  main video {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  main h1 {
+    font-size: 80px;
+  }
+
+  main span {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+}
+
 @media only screen and (max-width: 880px) {
+  .logo img {
+    height: 50%;
+  }
+  
   .hamburger {
     display: block;
     cursor: pointer;
@@ -420,7 +444,7 @@ footer a:hover {
     top: 0px;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     background-color: #0f0f0f;
     transition: 0.5s;
   }
@@ -440,5 +464,70 @@ footer a:hover {
 
   .nav-bar ul li a {
     margin: 20px;
+  }
+
+  .reseñas {
+    flex-direction: column;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  .title2 {
+    font-size: 40px;
+  }
+
+  .reseñas-box {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright {
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .socials {
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer nav ul li {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  main h1 {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  main h2 {
+    width: 100%;
+  }
+  main span {
+    font-size: 20px;
   }
 }
