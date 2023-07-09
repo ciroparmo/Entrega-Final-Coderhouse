@@ -39,6 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   transition: 0.5s;
+  position: relative;
 }
 
 .circle:hover {
@@ -49,12 +50,12 @@ header {
   width: 20%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .logo img {
-  width: 80%;
+  height: 80%;
 }
 
 .logo:hover {
@@ -72,18 +73,19 @@ header {
   padding: 0 20px;
 }
 
-.nav-bar ul li {
+.nav-bar ul {
+  display: flex;
   list-style: none;
-  display: inline;
 }
 
-.nav-bar a {
+.nav-bar ul li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   margin: 0 20px;
   cursor: pointer;
   transition: 0.3s;
+  display: block;
 }
 
 .nav-bar a:hover {
@@ -115,6 +117,12 @@ header {
 .nav-bar img {
   height: 50%;
   margin: 0 0 0 10px;
+}
+
+.hamburger {
+  display: none;
+  height: 100%;
+  width: auto;
 }
 
             /* <------- Cierra Nav Bar -------> */  
@@ -384,3 +392,53 @@ footer a:hover {
 }
 
             /* <------- Cierra Animaciones -------> */  
+
+            // Responsive
+
+@media only screen and (max-width: 880px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px;
+  }
+
+  .nav-bar {
+    display: none;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #0f0f0f;
+    transition: 0.5s;
+  }
+
+    .nav-bar.active {
+    height: 450px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar ul li a {
+    margin: 20px;
+  }
+}

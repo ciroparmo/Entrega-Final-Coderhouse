@@ -118,70 +118,6 @@ header {
 }
 
             /* <------- Cierra Nav Bar -------> */
-            
-            /* <------- Footer -------> */  
-
-footer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: 50px 30px;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-
-.copyright {
-  width: 20%;
-  display: flex;
-  align-items: center;
-}
-
-.copyright span {
-  color: white;
-}
-
-footer nav {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer ul li {
-  list-style: none;
-  display: inline;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  margin: 0 15px;
-  transition: 0.5s;
-}
-
-footer a:hover {
-  color: $primary;
-}
-
-.socials {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.socials a {
-  cursor: pointer;
-}
-
-.socials i {
-  font-size: 25px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-            /* <------- Cierra Footer -------> */  
 
 main {
   height: auto;
@@ -193,6 +129,15 @@ main {
   padding: 50px 0;
 }
 
+main h2 {
+  width: 50%;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(201, 201, 201);
+  margin: 0px 6px;
+  animation: slidetop 0.5s;
+}
+
 .title {
   font-size: 80px;
   font-weight: 800;
@@ -200,7 +145,6 @@ main {
   background: linear-gradient(40deg,$primary,rgb(0, 204, 255));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation: slidetop 0.5s;
   transition: 0.5s;
 }
 
@@ -230,6 +174,7 @@ main {
   transition: 0.5s;
   cursor: pointer;
   margin: 5px;
+  animation: slideleft 0.5s;
 }
 
 .b1:hover {
@@ -254,6 +199,7 @@ main {
   transition: 0.5s;
   cursor: pointer;
   margin: 5px;
+  animation: slideright 0.5s;
 }
 
 .b2:hover {
@@ -273,6 +219,7 @@ section {
   height: 300px;
   background-color: white;
   margin: 15px;
+  animation: slidetop 0.5s;
 }
 
 .img {
@@ -339,20 +286,87 @@ section {
   text-shadow: 0 0 10px white;
 }
 
-main h2 {
-  width: 50%;
-  font-size: 23px;
-  font-weight: 600;
-  color: rgb(201, 201, 201);
-  margin: 0px 6px;
-  animation: slidetop 0.5s;
+            /* <------- Footer -------> */  
+
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
+
+.copyright {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.copyright span {
+  color: white;
+}
+
+footer nav {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 15px;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color: $primary;
+}
+
+.socials {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a {
+  cursor: pointer;
+}
+
+.socials i {
+  font-size: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+            /* <------- Cierra Footer -------> */  
 
             /* <------- Animaciones -------> */  
 
 @keyframes slideleft {
   0% {
     transform: translateX(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(10%);
     opacity: 0;
   }
 
