@@ -18,12 +18,9 @@
       <div class="logo">
         <img src="src/logo.png" alt="">
       </div>
-      <div class="menu">
-
-      </div>
       <nav class="nav-bar">
         <ul>
-          <li> <a href="index.html">Nosotros</a> </li>
+          <li> <a href="index.html" class="active">Nosotros</a> </li>
           <li> <a href="catalogo.html">Catálogo</a> </li>
           <li> <a href="agencias.html">Agencias</a> </li>
         </ul>
@@ -33,8 +30,20 @@
           </button>
         </a>
       </nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
    </div>
   </header>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    nav = document.querySelector("nav");
+    hamburger.onclick = function() {
+        nav.classList.toggle("active");
+    }
+  </script>
   <main>
     <h1 class="title"> Catalogo </h1>
     <h2> Mas de 500 personas obtuvieron su auto con nosotros. </h2>
@@ -282,7 +291,6 @@
         <li> <a href="#"> Contacto </a> </li>
         <li> <a href="#"> Politicas y Privacidad </a> </li>
         <li> <a href="#"> Atencion al Cliente </a> </li>
-        <li> <a href="#"> Agencias </a> </li>
       </ul>
     </nav>
     <div class="socials">

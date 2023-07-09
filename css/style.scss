@@ -415,6 +415,25 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .reseñas {
+    flex-direction: column;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  .title2 {
+    font-size: 40px;
+  }
+
+  .reseñas-box {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
+
 @media only screen and (max-width: 880px) {
   .logo img {
     height: 50%;
@@ -449,7 +468,7 @@ footer a:hover {
     transition: 0.5s;
   }
 
-    .nav-bar.active {
+  .nav-bar.active {
     height: 450px;
     display: block;
     display: flex;
@@ -464,23 +483,6 @@ footer a:hover {
 
   .nav-bar ul li a {
     margin: 20px;
-  }
-
-  .reseñas {
-    flex-direction: column;
-  }
-
-  section h2 {
-    font-size: 40px;
-  }
-
-  .title2 {
-    font-size: 40px;
-  }
-
-  .reseñas-box {
-    width: 80%;
-    margin: 20px 0;
   }
 
   footer {

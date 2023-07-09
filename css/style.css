@@ -389,6 +389,21 @@ footer a:hover {
     font-size: 80px;
   }
 }
+@media only screen and (max-width: 960px) {
+  .reseñas {
+    flex-direction: column;
+  }
+  section h2 {
+    font-size: 40px;
+  }
+  .title2 {
+    font-size: 40px;
+  }
+  .reseñas-box {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
 @media only screen and (max-width: 880px) {
   .logo img {
     height: 50%;
@@ -432,19 +447,6 @@ footer a:hover {
   }
   .nav-bar ul li a {
     margin: 20px;
-  }
-  .reseñas {
-    flex-direction: column;
-  }
-  section h2 {
-    font-size: 40px;
-  }
-  .title2 {
-    font-size: 40px;
-  }
-  .reseñas-box {
-    width: 80%;
-    margin: 20px 0;
   }
   footer {
     display: flex;
