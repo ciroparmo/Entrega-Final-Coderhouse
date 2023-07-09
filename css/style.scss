@@ -107,9 +107,9 @@ header {
 }
 
 .nav-bar button:hover {
-  color: rgb(0, 81, 255);
+  color: $primary;
   border: 2px solid white;
-  text-shadow: 0 0 10px rgb(0, 81, 255);
+  text-shadow: 0 0 10px $primary;
 }
 
 .nav-bar img {
@@ -132,14 +132,14 @@ main {
   font-size: 120px;
   font-weight: 800;
   line-height: 1;
-  background: linear-gradient(40deg,rgb(0, 81, 255),rgb(0, 204, 255));
+  background: linear-gradient(40deg,$primary,rgb(0, 204, 255));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: 0.5s;
 }
 
 .title:hover {
-  text-shadow: 0 0 20px rgb(0, 81, 255);
+  text-shadow: 0 0 20px $primary;
 }
 
 main span {
@@ -200,9 +200,9 @@ main button {
 }
 
 main button:hover {
-  color: rgb(0, 81, 255);
+  color: $primary;
   border: 2px solid white;
-  text-shadow: 0 0 10px rgb(0, 81, 255);
+  text-shadow: 0 0 10px $primary;
 }
 
 section {
@@ -231,7 +231,7 @@ section h2 {
   font-size: 60px;
   font-weight: 800;
   line-height: 1;
-  background: linear-gradient(40deg,rgb(0, 81, 255),rgb(0, 204, 255));
+  background: linear-gradient(40deg,$primary,rgb(0, 204, 255));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: 0.5s;
@@ -276,7 +276,7 @@ section h2 {
 }
 
 .title2:hover {
-  text-shadow: 0 0 10px rgb(0, 81, 255);
+  text-shadow: 0 0 10px $primary;
 }
 
             /* <------- Footer -------> */  
