@@ -160,8 +160,6 @@ main h2 {
 
 section {
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -174,6 +172,8 @@ section {
   width: 100%;
   display: flex;
   background-color: black;
+  margin: 20px 0;
+  animation: slideleft 0.5s;
 }
 
 .mapa {
