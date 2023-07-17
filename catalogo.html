@@ -13,36 +13,38 @@
   <meta property="og:type" content="website">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/7a4972268e.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title> Veloce </title>
+  <title> Catálogo - Veloce </title>
   <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
   <header>
-    <div class="circle">
-      <div class="logo">
-        <img src="src/logo.png" alt="">
-      </div>
-      <nav class="nav-bar">
-        <ul>
-          <li> <a href="index.html" class="active">Nosotros</a> </li>
-          <li> <a href="catalogo.html">Catálogo</a> </li>
-          <li> <a href="agencias.html">Agencias</a> </li>
-        </ul>
-        <a href="contactanos.html">
-          <button>
-            Contactanos <img src="src/contactanos.png" alt="">
-          </button>
-        </a>
-      </nav>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-   </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="src/logo.png" alt="" class="logoimg">
+      </a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li> <a href="index.html"> Inicio </a> </li>
+        <li> <a href="catalogo.html" class="active"> Catálogo </a> </li>
+        <li> <a href="agencias.html"> Agencias </a> </li>
+      </ul>
+      <a href="contactanos.html">
+        <button>
+          Contáctanos <img src="src/contactanos.png" alt="">
+        </button>
+      </a>
+    </nav>
   </header>
   <script>
     hamburger = document.querySelector(".hamburger");
@@ -52,238 +54,244 @@
     }
   </script>
   <main>
-    <h1 class="title"> Catalogo </h1>
-    <h2> Mas de 500 personas obtuvieron su auto con nosotros. </h2>
+    <div data-aos="fade-down">
+      <h1 class="title" > Catálogo </h1>
+    </div>
+    <h2 data-aos="fade-down"> Mas de 500 personas obtuvieron su auto con nosotros. </h2>
     <div class="buttons">
-      <a>
-        <button class="b1"> Atencion al Cliente </button>
-      </a>
-      <a>
-        <button class="b2"> Resuelve tus dudas! </button>
-      </a>
+      <div data-aos="fade-right">
+        <a>
+          <button class="b1"> Atencion al Cliente </button>
+        </a>
+      </div>
+      <div data-aos="fade-left">
+        <a>
+          <button class="b2"> Resuelve tus dudas! </button>
+        </a>
+      </div>
     </div>
   </main>
   <section>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/1.jpg" alt="">
+        <img src="autos/1.jpg" alt="Chevrolet Camaro">
       </div>
       <div class="especificaciones">
         <span> Chevrolet Camaro </span>
         <span> USD 64.800 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/2.jpg" alt="">
+        <img src="autos/2.jpg" alt="Audi A3 Sedán">
       </div>
       <div class="especificaciones">
         <span> Audi A3 Sedán </span>
         <span> USD 43000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/3.jpg" alt="">
+        <img src="autos/3.jpg" alt="Chevrolet Camaro">
       </div>
       <div class="especificaciones">
         <span> Chevrolet Camaro </span>
         <span> USD 23000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/4.jpg" alt="">
+        <img src="autos/4.jpg" alt="Chevrolet Montana">
       </div>
       <div class="especificaciones">
         <span> Chevrolet Montana </span>
         <span> USD 10000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/5.jpg" alt="">
+        <img src="autos/5.jpg" alt="BMW Serie 3 Sedán">
       </div>
       <div class="especificaciones">
         <span> BMW Serie 3 Sedán </span>
         <span> USD 67900 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/6.jpg" alt="">
+        <img src="autos/6.jpg" alt="Chevrolet Onix Plus">
       </div>
       <div class="especificaciones">
         <span> Chevrolet Onix Plus </span>
         <span> USD 17000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/7.jpg" alt="">
+        <img src="autos/7.jpg" alt="FIAT Cronos">
       </div>
       <div class="especificaciones">
         <span> FIAT Cronos </span>
         <span> USD 8000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/8.jpg" alt="">
+        <img src="autos/8.jpg" alt="Jaguar XE">
       </div>
       <div class="especificaciones">
         <span> Jaguar XE </span>
         <span> USD 59000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/1.jpg" alt="">
+        <img src="autos/9.jpg" alt="Citroen C3">
       </div>
       <div class="especificaciones">
-        <span> Chevrolet Camaro </span>
-        <span> USD 64.800 </span>
+        <span> Citroen C3 </span>
+        <span> USD 12700 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/2.jpg" alt="">
+        <img src="autos/10.jpg" alt="Citroen C5 Aircross">
       </div>
       <div class="especificaciones">
-        <span> Audi A3 Sedán </span>
-        <span> USD 43000 </span>
+        <span> Citroen C5 Aircross </span>
+        <span> USD 8200 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/3.jpg" alt="">
+        <img src="autos/11.jpg" alt="Audi A1 Sportback">
       </div>
       <div class="especificaciones">
-        <span> Chevrolet Camaro </span>
-        <span> USD 23000 </span>
+        <span> Audi A1 Sportback </span>
+        <span> USD 24500 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/4.jpg" alt="">
+        <img src="autos/12.jpg" alt="Jeep Commander">
       </div>
       <div class="especificaciones">
-        <span> Chevrolet Montana </span>
-        <span> USD 10000 </span>
+        <span> Jeep Commander </span>
+        <span> USD 12400 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/5.jpg" alt="">
+        <img src="autos/13.jpg" alt="Jeep Wrangler">
       </div>
       <div class="especificaciones">
-        <span> BMW Serie 3 Sedán </span>
-        <span> USD 67900 </span>
+        <span> Jeep Wrangler </span>
+        <span> USD 102900 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/6.jpg" alt="">
+        <img src="autos/14.jpg" alt="Maserati Levante">
       </div>
       <div class="especificaciones">
-        <span> Chevrolet Onix Plus </span>
-        <span> USD 17000 </span>
+        <span> Maserati Levante </span>
+        <span> USD 264000 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/7.jpg" alt="">
+        <img src="autos/15.jpg" alt="Audi A5 Coupé">
       </div>
       <div class="especificaciones">
-        <span> FIAT Cronos </span>
-        <span> USD 8000 </span>
+        <span> Audi A5 Coupé </span>
+        <span> USD 67800 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="modelo">
+    <div class="modelo" data-aos="fade-up">
       <div class="img">
-        <img src="autos/8.jpg" alt="">
+        <img src="autos/16.jpg" alt="Mitsubishi L200">
       </div>
       <div class="especificaciones">
-        <span> Jaguar XE </span>
-        <span> USD 59000 </span>
+        <span> Mitsubishi L200 </span>
+        <span> USD 80900 </span>
         <div class="cotizacion">
           <a>
-            <button> Pedir Cotizacion </button>
+            <button> Consultar </button>
           </a>
         </div>
       </div>
@@ -295,15 +303,19 @@
     </div>
     <nav>
       <ul>
-        <li> <a href="#"> Contacto </a> </li>
+        <li> <a href="contactanos.html"> Contacto </a> </li>
         <li> <a href="#"> Politicas y Privacidad </a> </li>
         <li> <a href="#"> Atencion al Cliente </a> </li>
       </ul>
     </nav>
     <div class="socials">
-      <a href="#"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> </a>
-      <a href="#"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> </a>
+      <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+      <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({once: true});
+  </script>
 </body>
 </html>

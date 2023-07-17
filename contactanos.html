@@ -13,36 +13,38 @@
   <meta property="og:type" content="website">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/7a4972268e.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title> Veloce </title>
+  <title> Contáctanos - Veloce </title>
   <link rel="stylesheet" href="css/contactanos.css">
 </head>
 <body>
   <header>
-    <div class="circle">
-      <div class="logo">
-        <img src="src/logo.png" alt="">
-      </div>
-      <nav class="nav-bar">
-        <ul>
-          <li> <a href="index.html" class="active">Nosotros</a> </li>
-          <li> <a href="catalogo.html">Catálogo</a> </li>
-          <li> <a href="agencias.html">Agencias</a> </li>
-        </ul>
-        <a href="contactanos.html">
-          <button>
-            Contactanos <img src="src/contactanos.png" alt="">
-          </button>
-        </a>
-      </nav>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-   </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="src/logo.png" alt="" class="logoimg">
+      </a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li> <a href="index.html"> Inicio </a> </li>
+        <li> <a href="catalogo.html"> Catálogo </a> </li>
+        <li> <a href="agencias.html"> Agencias </a> </li>
+      </ul>
+      <a href="contactanos.html">
+        <button class="active ">
+          Contáctanos <img src="src/contactanos.png" alt="">
+        </button>
+      </a>
+    </nav>
   </header>
   <script>
     hamburger = document.querySelector(".hamburger");
@@ -52,15 +54,17 @@
     }
   </script>
   <main>
-    <h1 class="title"> Contactanos </h1>
-    <h2> Contacta con nosotros </h2>
+    <div data-aos="fade-down">
+      <h1 class="title"> Contáctanos </h1>
+    </div>
+    <h2 data-aos="fade-down"> Comunicate con nosotros </h2>
   </main>
   <section>
     <form>
-      <input type="email" placeholder="Introduce tu email">
-      <input type="text" placeholder="Titulo de tu consulta">
-      <input type="text" placeholder="Escribe cualquier consulta, reseña o reclamo">
-      <input type="submit">
+      <input type="email" placeholder="Introduce tu email" required data-aos="fade-right" data-aos-duration="500">
+      <input type="text" placeholder="Titulo de tu consulta" required data-aos="fade-right" data-aos-duration="1000">
+      <textarea class="textarea" placeholder="Escribe tu consulta o reclamo aqui" data-aos="fade-right" data-aos-duration="1500"></textarea>
+      <input class="submit" type="submit">
     </form>
   </section>
   <footer>
@@ -69,15 +73,19 @@
     </div>
     <nav>
       <ul>
-        <li> <a href="#"> Contacto </a> </li>
+        <li> <a href="contactanos.html"> Contacto </a> </li>
         <li> <a href="#"> Politicas y Privacidad </a> </li>
         <li> <a href="#"> Atencion al Cliente </a> </li>
       </ul>
     </nav>
     <div class="socials">
-      <a href="#"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> </a>
-      <a href="#"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> </a>
+      <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+      <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({once: true});
+  </script>
 </body>
 </html>

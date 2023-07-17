@@ -13,6 +13,8 @@
   <meta property="og:type" content="website">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/7a4972268e.js" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,29 +22,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="circle">
-      <div class="logo">
-        <img src="src/logo.png" alt="">
-      </div>
-      <nav class="nav-bar">
-        <ul>
-          <li> <a href="index.html" class="active">Nosotros</a> </li>
-          <li> <a href="catalogo.html">Catálogo</a> </li>
-          <li> <a href="agencias.html">Agencias</a> </li>
-        </ul>
-        <a href="contactanos.html">
-          <button>
-            Contactanos <img src="src/contactanos.png" alt="">
-          </button>
-        </a>
-      </nav>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-   </div>
+  <header data-aos="fade-down">
+    <div class="logo">
+      <a href="index.html">
+        <img src="src/logo.png" alt="" class="logoimg">
+      </a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li> <a href="index.html" class="active"> Inicio </a> </li>
+        <li> <a href="catalogo.html"> Catálogo </a> </li>
+        <li> <a href="agencias.html"> Agencias </a> </li>
+      </ul>
+      <a href="contactanos.html">
+        <button>
+          Contáctanos <img src="src/contactanos.png" alt="">
+        </button>
+      </a>
+    </nav>
   </header>
   <script>
     hamburger = document.querySelector(".hamburger");
@@ -52,31 +54,35 @@
     }
   </script>
   <main>
-    <span> Con nosotros tendrás </span>
-    <h1> El <span class="title"> auto </span> <br> de tus sueños a <br> tu <span class="title"> alcance. </span> </h1>
-    <h2> Somos una agencia de autos situada en Argentina, con el mejor catálogo del pais. </h2>
+    <p data-aos="fade-right"> Con nosotros tendrás </p>
+    <h1 data-aos="fade-right"> El <span class="title"> auto </span> <br> de tus sueños a <br> tu <span class="title"> alcance. </span> </h1>
+    <h2 data-aos="fade-up"> Somos una agencia de autos situada en Argentina, con el mejor catálogo del pais. </h2>
     <video autoplay loop muted src="src/mainvid.webm"></video>
-    <button>
-      Quiero mi nuevo auto!
-    </button>
+    <div data-aos="fade-right">
+      <a href="catalogo.html"> 
+        <button>
+          Quiero mi nuevo auto!
+        </button>
+      </a>
+    </div>
   </main>
   <section>
-    <h2> Esto <span class="title2"> opinan </span> nuestros clientes de <span class="title2"> nosotros </span> </h2>
+    <h2 data-aos="zoom-out"> Esto <span class="title2"> opinan </span> nuestros clientes de <span class="title2"> nosotros </span> </h2>
     <div class="reseñas">
-      <div class="reseñas-box">
+      <div class="reseñas-box" data-aos="flip-left">
         <span> ❞ </span>
         <h3> Juan Rodríguez </h3>
         <p> Compré un auto en esta concesionaria y estoy realmente impresionado con su rendimiento y calidad. El vehículo superó mis expectativas en todos los sentidos. Su diseño elegante, su potente motor y su avanzada tecnología hacen que conducirlo sea una experiencia emocionante. Definitivamente recomendaría este auto a cualquiera que busque calidad y rendimiento. </p>
       </div>
-      <div class="reseñas-box">
+      <div class="reseñas-box" data-aos="flip-left">
         <span> ❞ </span>
         <h3> Gabriela Torres </h3>
-        <p> El servicio que recibí en esta concesionaria fue excelente. Desde el momento en que entré, el personal me atendió con amabilidad y profesionalidad. Me guiaron a través de todas las opciones disponibles y respondieron pacientemente a todas mis preguntas. La transparencia en la información y el trato personalizado fueron destacables. Además, el proceso de compra fue rápido y eficiente. </p>
+        <p> El servicio que recibí en esta concesionaria fue excelente. Desde el momento en que entré, el personal me atendió con amabilidad y profesionalidad. Me guiaron a través de todas las opciones disponibles y respondieron pacientemente a todas mis preguntas. La transparencia en la información y el trato personalizado fueron destacables. </p>
       </div>
-      <div class="reseñas-box">
+      <div class="reseñas-box" data-aos="flip-left">
         <span> ❞ </span>
         <h3> Luis Gómez </h3>
-        <p> El trato que recibí en esta concesionaria fue excepcional. Los empleados se mostraron amables, respetuosos y dispuestos a ayudar en todo momento. Desde el primer contacto hasta la entrega del auto, me sentí valorado como cliente. Su atención personalizada y el interés genuino por satisfacer mis necesidades fueron impresionantes. Sin duda, volveré a esta concesionaria en el futuro y la recomendaré a mis conocidos. </p>
+        <p> El trato que recibí en esta concesionaria fue excepcional. Los empleados se mostraron amables, respetuosos y dispuestos a ayudar en todo momento. Desde el primer contacto hasta la entrega del auto, me sentí valorado como cliente. Su atención personalizada y el interés genuino por satisfacer mis necesidades fueron impresionantes. Sin duda, volveré a esta concesionaria. </p>
       </div>
     </div>
   </section>
@@ -86,15 +92,19 @@
     </div>
     <nav>
       <ul>
-        <li> <a href="#"> Contacto </a> </li>
+        <li> <a href="contactanos.html"> Contacto </a> </li>
         <li> <a href="#"> Politicas y Privacidad </a> </li>
         <li> <a href="#"> Atencion al Cliente </a> </li>
       </ul>
     </nav>
     <div class="socials">
-      <a href="#"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> </a>
-      <a href="#"> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i> </a>
+      <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+      <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({once: true});
+  </script>
 </body>
 </html>
