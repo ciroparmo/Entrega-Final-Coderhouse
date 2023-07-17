@@ -173,7 +173,6 @@ main video {
   border-radius: 10px;
   box-shadow: 0 0 30px rgb(0, 0, 0);
   transition: 0.5s;
-  z-index: 99;
 }
 
 main video:hover {
