@@ -10,8 +10,11 @@
 }
 
 body {
-  background-color: #0f0f0f;
+  background-image: url(../src/Contour\ Line.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 // Colores
 
 $primary: rgb(0, 81, 255);
@@ -24,7 +27,6 @@ header {
   width: 100%;
   height: 95px;
   background-color: black;
-  box-shadow: 0 5px 10px black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,8 +298,7 @@ footer {
   width: 100%;
   height: auto;
   display: flex;
-  padding: 50px 30px;
-
+  padding: 80px 30px;
   justify-content: space-between;
 }
 
@@ -309,11 +310,12 @@ footer {
 
 .copyright span {
   color: rgb(153, 153, 153);
+  transition: 0.5s;
 }
 
 .copyright span:hover {
   color: $primary;
-  transition: 0.5s;
+  text-shadow: 0 0 7px $primary;
 }
 
 footer nav {
@@ -360,6 +362,7 @@ footer a:hover {
 
 .socials i:hover {
   color: $primary;
+  text-shadow: 0 0 7px $primary;
 }
 
             /* <------- Cierra Footer -------> */  

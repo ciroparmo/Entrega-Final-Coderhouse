@@ -10,8 +10,11 @@
 }
 
 body {
-  background-color: #0f0f0f;
+  background-image: url(../src/Contour\ Line.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 // Colores
 
 $primary: rgb(0, 81, 255);
@@ -24,7 +27,6 @@ header {
   width: 100%;
   height: 95px;
   background-color: black;
-  box-shadow: 0 5px 10px black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,6 +157,7 @@ main p {
   font-weight: 700;
   color: rgb(201, 201, 201);
   margin: 0px 6px;
+  font-weight: 500;
 }
 
 main h1 {
@@ -171,6 +174,7 @@ main h2 {
   font-weight: 600;
   color: rgb(201, 201, 201);
   margin: 0px 6px;
+  font-weight: 400;
 }
 
 main video {
@@ -182,6 +186,7 @@ main video {
   border-radius: 10px;
   box-shadow: 0 0 30px rgb(0, 0, 0);
   transition: 0.5s;
+  z-index: 50;
 }
 
 main video:hover {
@@ -292,8 +297,7 @@ footer {
   width: 100%;
   height: auto;
   display: flex;
-  padding: 50px 30px;
-
+  padding: 80px 30px;
   justify-content: space-between;
 }
 
@@ -305,11 +309,12 @@ footer {
 
 .copyright span {
   color: rgb(153, 153, 153);
+  transition: 0.5s;
 }
 
 .copyright span:hover {
   color: $primary;
-  transition: 0.5s;
+  text-shadow: 0 0 7px $primary;
 }
 
 footer nav {
@@ -324,7 +329,7 @@ footer ul li {
   display: inline;
 }
 
-footer a {
+footer nav a {
   color: rgb(153, 153, 153);
   text-decoration: none;
   font-size: 15px;
@@ -332,7 +337,7 @@ footer a {
   transition: 0.5s;
 }
 
-footer a:hover {
+footer nav a:hover {
   color: $primary;
 }
 
@@ -347,15 +352,30 @@ footer a:hover {
   cursor: pointer;
 }
 
-.socials i {
+.fa-instagram {
   font-size: 25px;
   margin: 0 10px;
   cursor: pointer;
+  color: rgb(153, 153, 153);
+  transition: 0.2s; // No consegui hacer andar la transition del icon de ig
+}
+
+.fa-twitter {
+  font-size: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: rgb(153, 153, 153);
   transition: 0.2s;
 }
 
-.socials i:hover {
-  color: $primary;
+.fa-instagram:hover {
+  background: linear-gradient(-10deg,rgb(255 220 128),rgb(252 175 69),rgb(247 119 55),rgb(245, 96, 64),rgb(253, 29, 29),rgb(225, 48, 108),rgb(193, 53, 132),rgb(131, 58, 180),rgb(88, 81, 219),rgb(64, 93, 230));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
 }
 
             /* <------- Cierra Footer -------> */  
