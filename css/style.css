@@ -45,12 +45,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
-.logo a img {
-  height: 80%;
-  margin: 0 10px;
+.logo span {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  font-style: italic;
   cursor: pointer;
 }
 
@@ -181,6 +182,7 @@ main video {
 
 main video:hover {
   transform: rotate(0deg);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.322);
 }
 
 main button {
@@ -321,6 +323,7 @@ footer nav a {
   font-size: 15px;
   margin: 0 15px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 footer nav a:hover {
@@ -366,8 +369,8 @@ footer nav a:hover {
 
 /* <------- Cierra Footer -------> */
 @media only screen and (max-width: 980px) {
-  .logo a img {
-    height: 48%;
+  .logo span {
+    font-size: 32px;
   }
   .hamburger {
     display: block;
