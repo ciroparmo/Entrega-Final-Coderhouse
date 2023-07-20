@@ -9,6 +9,17 @@
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0f0f0f;
+  border: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
 body {
   background-image: url(../src/Contour\ Line.svg);
   background-size: cover;
@@ -278,9 +289,10 @@ section h2 {
 }
 
 .reseñas-box h3 {
-  color: white;
+  color: $primary;
   font-size: 30px;
   margin: 10px 0;
+  font-weight: 700;
 }
 
 .reseñas-box p {
