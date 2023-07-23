@@ -7,6 +7,9 @@
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body {
